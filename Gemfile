@@ -18,6 +18,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
+gem 'bootstrap'
+gem 'google-webfonts-rails'
+gem 'jquery-ui-rails'
 
 
 group :development, :test do
