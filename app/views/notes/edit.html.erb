@@ -1,0 +1,6 @@
+<h2>Edit Notes for <%= @note.job.title %> - <strong><%= @note.job.company %></strong></h2>
+
+<%= render 'form', note: @note %>
+
+<%= link_to 'Show', @note %> |
+<%= link_to 'Back', notes_path %>

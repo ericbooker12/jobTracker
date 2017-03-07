@@ -28,4 +28,19 @@ ActiveRecord::Schema.define(version: 20170307204454) do
     t.datetime "updated_at",                null: false
   end
 
+  create_table "notes", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "job_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["job_id"], name: "index_notes_on_job_id", using: :btree
+  end
+
+  create_table "positions", force: :cascade do |t|
+    t.string   "position_name"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_foreign_key "notes", "jobs"
 end

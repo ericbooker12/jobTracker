@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<h2>Job Notes</h2>
+
+<p><strong>Job:</strong><%= @note.job.title %> - <%= @note.job.company %></p>
+<p class="note-content"><%= @note.content %></p>
+
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'New Note', new_note_path(@note.job) %> |
+<%= link_to 'Back', notes_path %>
