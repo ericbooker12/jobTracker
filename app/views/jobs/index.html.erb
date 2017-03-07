@@ -3,66 +3,66 @@
 <h1>Jobs</h1>
 
 <table class="table xtable-stripedx job-table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Company</th>
-      <th>Date applied</th>
-      <th>Resume sent?</th>
-      <th>Cover letter sent?</th>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Company</th>
+			<th>Date applied</th>
+			<th>Resume sent?</th>
+			<th>Cover letter sent?</th>
 
-    </tr>
-  </thead>
+		</tr>
+	</thead>
 
-  <tbody>
-  <% @jobs.each do |job| %>
-    <%  if job.rejected? %>
-      <tr class="job-list_item"><strike>
-        <td style="opacity: 0.4;"><strike><%= link_to job.title, job %></strike></td>
-        <td style="opacity: 0.4;">
-          <% if job.URL %>
-            <strike><%= link_to job.company, job.URL %>
-          <% else %>
-            <strike><%=  job.company %>
-          <% end %>
-        </strike></td>
-        <td style="opacity: 0.4;"" colspan='3'><strong><h4>Not Interested</h4></strong></td>
-      </tr>
-
-
-    <% else %>
-      <tr class="job-list_item">
-        <td><%= link_to job.title, job %></td>
-        <td>
-          <% if job.URL %>
-            <%= link_to job.company, job.URL %>
-          <% else %>
-            <%=  job.company %>
-          <% end %>
-        </td>
-        <td><%= job.date_applied %></td>
-        <td>
-          <% if job.resume_sent %>
-            Yes
-          <% else %>
-            No
-          <% end %>
-        </td>
-        <td>
-          <% if job.cover_letter_sent %>
-            Yes
-          <% else %>
-            No
-          <% end %>
-        </td>
-
-    <% end %>
+	<tbody>
+	<% @jobs.each do |job| %>
+		<% if job.rejected? %>
+			<tr class="job-list_item"><strike>
+				<td style="opacity: 0.4;"><strike><%= link_to job.title, job %></strike></td>
+				<td style="opacity: 0.4;">
+					<% if job.URL %>
+						<strike><%= link_to job.company, job.URL %>
+					<% else %>
+						<strike><%=  job.company %>
+					<% end %>
+				</strike></td>
+				<td style="opacity: 0.4;"" colspan='3'><strong><h4>Not Interested</h4></strong></td>
+			</tr>
 
 
+		<% else %>
+			<tr class="job-list_item">
+				<td><%= link_to job.title, job %></td>
+				<td>
+					<% if job.URL %>
+						<%= link_to job.company, '#' %>
+					<% else %>
+						<%=  job.company %>
+					<% end %>
+				</td>
+				<td><%= job.date_applied %></td>
+				<td>
+					<% if job.resume_sent %>
+						Yes
+					<% else %>
+						No
+					<% end %>
+				</td>
+				<td>
+					<% if job.cover_letter_sent %>
+						Yes
+					<% else %>
+						No
+					<% end %>
+				</td>
 
-  <% end %>
+		<% end %>
 
-  </tbody>
+
+
+	<% end %>
+
+	</tbody>
 </table>
 
 <br>

@@ -21,6 +21,7 @@ gem 'bootstrap-sass'
 gem 'bootstrap'
 gem 'google-webfonts-rails'
 gem 'jquery-ui-rails'
+gem 'faker'
 
 
 group :development, :test do

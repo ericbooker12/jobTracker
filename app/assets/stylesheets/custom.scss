@@ -1,0 +1,216 @@
+
+/* RGB */
+$color2: rgba(220, 220, 220, 1);
+$color1: rgba(211, 211, 211, 1);
+$color3: rgba(192, 192, 192, 1);
+$color4: rgba(169, 169, 169, 1);
+$color5: rgba(128, 128, 128, 1);
+
+$shadow: 10px 10px 5px $color3;
+
+$shadow2: 4px 4px 1px;
+
+// $background-stripes: url(background_stripes_full.png) $color1 repeat-x;
+$background-stripes: url(background_dark_stripes.png) #eee repeat 0px 0px;
+$noto-font: 'Noto Sans', sans-serif;
+$ranga-font: 'Ranga', sans-serif;
+
+
+
+.header, .main {
+    box-shadow: $shadow;
+}
+
+.main {
+	box-shadow: $shadow;
+	background-color: $color1;
+	background: $background-stripes;
+	padding: 20px 50px 20px 50px;
+	border-radius: 4px 4px 4px 4px;
+	margin-bottom: 100px;
+}
+
+.job-table {
+	text-align: center;
+
+}
+
+.header {
+	background-color: $color1;
+	background: $background-stripes;
+	position: relative;
+	width: 100%;
+	height: 125px;
+	margin: 39px 0px 0px;
+	border-radius: 4px 4px 4px 4px;
+	// border-radius: 50%;
+}
+
+
+.profile-pic-small {
+  width: 28px;
+  height: 28px;
+
+}
+
+.profile-pic-med {
+  width: 48px;
+  height: 48px;
+}
+
+.profile-pic-lrg{
+
+  width: 68px;
+  height: 68px;
+}
+
+.profile-pic-full {
+  width: 100%;
+  height: 100%;
+}
+
+#logo-pic {
+  padding-top: 10px;
+}
+
+// .shadowleft,
+// .shadowright {
+// 	width: 24px;
+// 	height: 448%;
+// 	position: absolute;
+// 	top: 15px;
+// }
+
+.shadowleft {
+	left: -24px;
+	background: url(side_shadow_l.png) transparent no-repeat 0px 0px;
+}
+
+.shadowright {
+	right: -24px;
+	background: url(side_shadow_r.png) transparent no-repeat 0px 0px;
+}
+
+.text-box {
+	border: 0px solid #999999;
+	box-shadow: $shadow2 grey;
+	// background-color: #FFFFA5;
+	background: url(old-paper.jpg) transparent  0px 0px;
+	width: 90%;
+	margin:25px;
+	padding:25px;
+}
+
+// Jobs
+.job-btn {
+	background: #B0C4DD;
+	box-shadow: 2px 2px 1px $color5;
+}
+
+.job-btn:hover, .note-btn:focus {
+    background: #B0C4DD;
+    box-shadow: 4px 4px 2px $color5;
+}
+
+.job-info {
+	margin-top: 30px;
+}
+
+// Notes
+
+.text-box{
+	margin-top: 30px;
+	width: 100%;
+}
+
+#note-separation {
+	border: 1px solid #808080;
+	box-shadow: 2px 2px 1px $color5;
+}
+
+.new-note-btn {
+	padding-bottom: 10px;
+	color: red;
+}
+
+.note-btn {
+	background: #DCDCDC;
+	box-shadow: 2px 2px 1px $color5;
+}
+
+.delete-btn {
+	background: #Dc2a2a;
+	box-shadow: 2px 2px 1px $color5;
+	color: black;
+}
+
+.note-btn:hover, .note-btn:focus {
+    background: #D3D3D3;
+    box-shadow: 4px 4px 2px $color5;
+}
+
+.delete-btn:hover, .note-btn:focus {
+    background: #FE5C5C;
+
+    box-shadow: 4px 4px 2px $color5;
+}
+.reject-btn {
+	background: #FE5C5C;
+	box-shadow: 2px 2px 1px $color5;
+	color: black;
+}
+
+.reject-btn:hover, .note-btn:focus {
+    background: #Dc2a2a;
+    box-shadow: 4px 4px 2px $color5;
+}
+
+.note-content p{
+	font-family: 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+p.thin {
+	line-height: 130%;
+	font-size: 12px;
+	// letter-spacing: -1px;
+	// font-family: "Arial", Times, serif;
+	font-weight: 100;
+}
+
+.action-link {
+	// font-size: 14px;
+	font-weight: 200;
+
+}
+.action-link:hover{
+		background-color: none;
+		font-weight: 400;
+	}
+
+#end-of-note {
+	border: 1px solid $color1;
+	// box-shadow: 2px 2px 1px $color1;
+}
+
+#notes-title {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+
+.strike {
+	text-decoration: line-through;
+	opacity: 0.3;
+}
+
+
+
+
+
+
+
+
