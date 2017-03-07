@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>JobTracker</title>
-		<%= csrf_meta_tags %>
+<head>
+	<title>Job Tracker</title>
+	<%= csrf_meta_tags %>
 
-		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Amiko|Ranga" rel="stylesheet">
-		<link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
 
-	</head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amiko|Ranga" rel="stylesheet">
+	<link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
 
-	<body>
+</head>
+<body>
 	<div class="container">
+
+	<%= render 'layouts/header2' %>
+	<div class="main">
 		<%= yield %>
 	</div>
-	</body>
+
+	</div>
+</body>
 </html>
