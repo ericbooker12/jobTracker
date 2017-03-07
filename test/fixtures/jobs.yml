@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  company: MyString
+  date_applied: 2017-03-07 12:44:54
+  resume_sent: false
+  cover_letter_sent: false
+  cover_letter: MyText
+  date_called_for_interview: 2017-03-07 12:44:54
+  rejected: false
+
+two:
+  title: MyString
+  company: MyString
+  date_applied: 2017-03-07 12:44:54
+  resume_sent: false
+  cover_letter_sent: false
+  cover_letter: MyText
+  date_called_for_interview: 2017-03-07 12:44:54
+  rejected: false
