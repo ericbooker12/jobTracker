@@ -1,0 +1,30 @@
+<%= form_for(note) do |f| %>
+	<% if note.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(note.errors.count, "error") %> prohibited this note from being saved:</h2>
+
+			<ul>
+			<% note.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<div class="field">
+		<%= f.label :job_id %>
+		<%= f.text_field(:job_id, :value => @job.id) %>
+	</div>
+
+	<div class="field ">
+		<%= f.text_area :content, cols: "90", rows: "10", class: "text-box"  %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit class: 'btn btn-primary btn-sm' %>
+	</div>
+<% end %>
+
+
+
+

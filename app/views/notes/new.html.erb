@@ -1,0 +1,5 @@
+<h3>New note for <strong> <%= @job.company %> - <%= @job.title.capitalize %></strong></h3>
+
+	<%= render 'form', note: @note, class: 'note-form' %>
+
+	<%= link_to 'Back', notes_path %>

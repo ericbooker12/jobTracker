@@ -1,12 +1,23 @@
 
 /* RGB */
-$color2: rgba(220, 220, 220, 1);
-$color1: rgba(211, 211, 211, 1);
+
+$color1: rgba(220, 220, 220, 1);
+$color2: rgba(235, 235, 235, 1);
 $color3: rgba(192, 192, 192, 1);
 $color4: rgba(169, 169, 169, 1);
 $color5: rgba(128, 128, 128, 1);
 
-$shadow: 10px 10px 5px $color3;
+//Color palate 2
+$color6: rgba(224, 251, 252, 1);
+$color7: rgba(194, 223, 227, 1);
+$color8: rgba(157, 180, 192, 1);
+$color9: rgba(92, 107, 115, 1);
+$color10: rgba(37, 50, 55, 1);
+
+$shadow-color: #424B54;
+$header-background: rgba(157, 180, 192, 1);
+
+$shadow: 8px 8px 5px $shadow-color;
 
 $shadow2: 4px 4px 1px;
 
@@ -14,7 +25,7 @@ $shadow2: 4px 4px 1px;
 $background-stripes: url(background_dark_stripes.png) #eee repeat 0px 0px;
 $noto-font: 'Noto Sans', sans-serif;
 $ranga-font: 'Ranga', sans-serif;
-
+$josefin-slab: 'Josefin Slab', serif;
 
 
 .header, .main {
@@ -23,8 +34,8 @@ $ranga-font: 'Ranga', sans-serif;
 
 .main {
 	box-shadow: $shadow;
-	background-color: $color1;
 	background: $background-stripes;
+	background-color: $color2;
 	padding: 20px 50px 20px 50px;
 	border-radius: 4px 4px 4px 4px;
 	margin-bottom: 100px;
@@ -36,8 +47,8 @@ $ranga-font: 'Ranga', sans-serif;
 }
 
 .header {
-	background-color: $color1;
 	background: $background-stripes;
+	background-color: $color2;
 	position: relative;
 	width: 100%;
 	height: 125px;
@@ -95,19 +106,22 @@ $ranga-font: 'Ranga', sans-serif;
 	border: 0px solid #999999;
 	box-shadow: $shadow2 grey;
 	// background-color: #FFFFA5;
-	background: url(old-paper.jpg) transparent  0px 0px;
+	// background: url(old-paper.jpg) transparent  0px 0px;
+	background: url(vintage_paper.jpg) transparent  0px 0px;
+
 	width: 90%;
 	margin:25px;
 	padding:25px;
+	font-family: $josefin-slab;
 }
 
 // Jobs
 .job-btn {
-	background: #B0C4DD;
+	background: #DCDCDC;
 	box-shadow: 2px 2px 1px $color5;
 }
 
-.job-btn:hover, .note-btn:focus {
+.job-btn:hover, .job-btn:focus {
     background: #B0C4DD;
     box-shadow: 4px 4px 2px $color5;
 }
@@ -130,7 +144,7 @@ $ranga-font: 'Ranga', sans-serif;
 
 .new-note-btn {
 	padding-bottom: 10px;
-	color: red;
+	color: $color5;
 }
 
 .note-btn {
@@ -202,10 +216,49 @@ p.thin {
 	text-decoration: underline;
 }
 
-.strike {
-	text-decoration: line-through;
-	opacity: 0.3;
+.row-header {
+	background-color: $header-background;
+	text-align: center;
+
 }
+
+.t-row {
+	border-radius: 5px;
+}
+
+.note-content {
+	font-family: $josefin-slab;
+}
+
+
+@media print {
+
+	.links {
+		display: none;
+	}
+
+	.main {
+		background: blue;
+		background-color: $color2;
+		padding: 20px 50px 20px 50px;
+		border-radius: 4px 4px 4px 4px;
+		margin-bottom: 100px;
+	}
+
+	.job-page {
+		width: auto;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+	#line_items {
+		page-break-before: always;
+	}
+
+}
+
+
 
 
 

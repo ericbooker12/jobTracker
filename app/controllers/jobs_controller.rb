@@ -1,20 +1,29 @@
 class JobsController < ApplicationController
-  before_action :set_job, only: [:show, :edit, :update, :destroy]
-
-  # GET /jobs
-  # GET /jobs.json
+  before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected]
   def index
     @jobs = Job.all
+
   end
 
   # GET /jobs/1
   # GET /jobs/1.json
   def show
+  	@job = Job.find(params[:id])
+  	@notes = @job.notes
+  	# p '#' * 20
+  	# p @job.notes
+  	# p params
+  	# p '#' * 20
   end
 
   # GET /jobs/new
   def new
     @job = Job.new
+    @positions = Position.all
+    @positions_arr = []
+    @positions.each do |position|
+    	@positions_arr << position.position_name.capitalize
+    end
   end
 
   # GET /jobs/1/edit
@@ -25,7 +34,7 @@ class JobsController < ApplicationController
   # POST /jobs.json
   def create
     @job = Job.new(job_params)
-
+    p job_params
     respond_to do |format|
       if @job.save
         format.html { redirect_to @job, notice: 'Job was successfully created.' }
@@ -42,7 +51,7 @@ class JobsController < ApplicationController
   def update
     respond_to do |format|
       if @job.update(job_params)
-        format.html { redirect_to @job, notice: 'Job was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'Job was successfully updated.' }
         format.json { render :show, status: :ok, location: @job }
       else
         format.html { render :edit }
@@ -61,6 +70,11 @@ class JobsController < ApplicationController
     end
   end
 
+  def rejected
+  	@job.update_attribute(:rejected, true)
+  	redirect_to root_path, notice: "The position of #{@job.title} from #{@job.company} is marked as 'Not Offered'"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_job
@@ -69,6 +83,6 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:title, :company, :date_applied, :resume_sent, :cover_letter_sent, :cover_letter, :date_called_for_interview, :rejected)
+      params.require(:job).permit(:title, :company, :date_applied, :resume_sent, :cover_letter_sent, :cover_letter, :resume_file_name, :URL, :rejected, :not_offered)
     end
 end
