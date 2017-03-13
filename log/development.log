@@ -35176,3 +35176,106 @@ Processing by JobsController#index as HTML
 Completed 200 OK in 240ms (Views: 238.3ms | ActiveRecord: 0.3ms)
 
 
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+Started GET "/" for ::1 at 2017-03-13 16:18:48 -0700
+Started GET "/" for ::1 at 2017-03-13 16:18:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (1.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (23.6ms)
+  Rendered jobs/index.html.erb within layouts/application (109.9ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 1086ms (Views: 1060.7ms | ActiveRecord: 5.6ms)
+
+
+  Rendered layouts/_header2.html.erb (0.0ms)
+Completed 200 OK in 1079ms (Views: 955.5ms | ActiveRecord: 107.1ms)
+
+
+Started GET "/jobs/new" for ::1 at 2017-03-13 16:18:52 -0700
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.4ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (359.2ms)
+  Rendered jobs/new.html.erb within layouts/application (361.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 625ms (Views: 605.2ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/jobs" for ::1 at 2017-03-13 16:19:15 -0700
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYe4TOnKI2EXLCySlipJ5s+aVIVOCbYnfUyPpxSCLEOK74zL/TcMdEkNlrUJAfOyJe0h3NR2CPeUhWzsxA0Hxw==", "job"=>{"company"=>"sdagfdsf", "URL"=>"sdgdsg", "title"=>"Dev ops engineer", "date_applied"=>"2017-03-14", "resume_sent"=>"0", "cover_letter_sent"=>"0", "cover_letter"=>"", "not_offered"=>""}, "commit"=>"Create Job"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("title", "company", "date_applied", "resume_sent", "cover_letter_sent", "created_at", "updated_at", "cover_letter", "URL") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Dev ops engineer"], ["company", "sdagfdsf"], ["date_applied", Tue, 14 Mar 2017], ["resume_sent", false], ["cover_letter_sent", false], ["created_at", 2017-03-13 23:19:15 UTC], ["updated_at", 2017-03-13 23:19:15 UTC], ["cover_letter", ""], ["URL", "sdgdsg"]]
+  [1m[35m (55.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/jobs/13
+Completed 302 Found in 61ms (ActiveRecord: 56.2ms)
+
+
+Started GET "/jobs/13" for ::1 at 2017-03-13 16:19:15 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 13]]
+  Rendered jobs/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 236.4ms | ActiveRecord: 2.7ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+Started GET "/positions/new" for ::1 at 2017-03-13 16:22:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PositionsController#new as HTML
+  Rendering positions/new.html.erb within layouts/application
+  Rendered positions/_form.html.erb (335.9ms)
+  Rendered positions/new.html.erb within layouts/application (338.9ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 984ms (Views: 962.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/positions" for ::1 at 2017-03-13 16:23:04 -0700
+Processing by PositionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dupX0Xlqu7Egei7XOYLdPFH9yBIRbTZs6wJKNWc26mFqgXdU5xcqgDR3hU7rkoJiIbCQvHBkM4TrwwSebwAwBQ==", "position"=>{"position_name"=>"new position"}, "commit"=>"Create Position"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "positions" ("position_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["position_name", "new position"], ["created_at", 2017-03-13 23:23:04 UTC], ["updated_at", 2017-03-13 23:23:04 UTC]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions/8
+Completed 302 Found in 11ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/positions/8" for ::1 at 2017-03-13 16:23:04 -0700
+Processing by PositionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering positions/show.html.erb within layouts/application
+  Rendered positions/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 238ms (Views: 232.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 16:23:06 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 230ms (Views: 228.2ms | ActiveRecord: 0.3ms)
+
+
