@@ -20,10 +20,16 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-ui-rails'
 gem 'pg'
+gem 'pdf-writer', '~> 1.1', '>= 1.1.8'
+gem 'prawn'
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'faker', '~> 1.7', '>= 1.7.3'
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  gem 'factory_girl_rails', '~> 4.8'
 end
 
 group :development do
@@ -37,3 +43,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :test do
+
+  gem 'capybara', '~> 2.12', '>= 2.12.1'
+  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'launchy', '~> 2.4', '>= 2.4.3'
+  gem 'selenium-webdriver', '~> 3.3'
+end
+
+

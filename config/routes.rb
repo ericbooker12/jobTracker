@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 	end
 
 
-
-
 	# get 'resume', to: 'jobs#resume'
 
 	root 'jobs#index'

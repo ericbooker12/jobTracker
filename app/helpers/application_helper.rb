@@ -5,15 +5,13 @@ module ApplicationHelper
 	end
 
 	def display_day_month_year_time(date)
-
+		# i.e Friday, Feb 10, 2017, 12:00 AM
 		date.strftime("%A, %b %d, %Y, %l:%M %p")
 	end
 
 	def display_normal_date(date)
-		p date.zone
 		# date.strftime("%m/%d/%Y at: %l:%M %p")
-		date.strftime("%c")
-
+		date.strftime("%A, %b %d, %Y")
 	end
 
 end

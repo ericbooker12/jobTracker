@@ -5,11 +5,11 @@
 <table class="table xtable-stripedx job-table">
 	<thead>
 		<tr>
-			<th>Title</th>
-			<th>Company</th>
-			<th>Date applied</th>
-			<th>Resume sent?</th>
-			<th>Cover letter sent?</th>
+			<th class="row-header">Job Title</th>
+			<th class="row-header">Company</th>
+			<th class="row-header">Date applied</th>
+			<th class="row-header">Resume sent?</th>
+			<th class="row-header">Cover letter sent?</th>
 
 		</tr>
 	</thead>
@@ -18,7 +18,7 @@
 	<% @jobs.each do |job| %>
 		<%  if job.rejected? %>
 			<tr class="job-list_item"><strike>
-				<td style="opacity: 0.4;"><strike><%= link_to job.title, job %></strike></td>
+				<td style="opacity: 0.4;"><strike><%= link_to job.title.capitalize, job %></strike></td>
 				<td style="opacity: 0.4;">
 					<% if job.URL %>
 						<strike><%= link_to job.company, job.URL %>
@@ -26,13 +26,13 @@
 						<strike><%=  job.company %>
 					<% end %>
 				</strike></td>
-				<td style="opacity: 0.4;"" colspan='3'><strong><h4>Not Interested</h4></strong></td>
+				<td style="opacity: 0.4;"" colspan='3'><strong><h4>Job is off the table</h4></strong></td>
 			</tr>
 
 
 		<% else %>
 			<tr class="job-list_item">
-				<td><%= link_to job.title, job %></td>
+				<td><%= link_to job.title.capitalize, job %></td>
 				<td>
 					<% if job.URL %>
 						<%= link_to job.company, job.URL %>

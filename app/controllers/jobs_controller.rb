@@ -1,8 +1,8 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected]
-
   def index
     @jobs = Job.all
+
   end
 
   # GET /jobs/1
@@ -22,7 +22,7 @@ class JobsController < ApplicationController
     @positions = Position.all
     @positions_arr = []
     @positions.each do |position|
-    	@positions_arr << position.position_name
+    	@positions_arr << position.position_name.capitalize
     end
   end
 

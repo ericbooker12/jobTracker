@@ -3,7 +3,7 @@
 	<!-- Job Info -->
 	<div class="col-md-4 well job-info">
 		<p id="notice"><%= notice %></p>
-		<h2><%= @job.title %></h2>
+		<h2><%= @job.title.capitalize %></h2>
 		<h3><%= @job.company %></h3>
 		<p>You applied for this job on <strong><%= display_custom_day_month_year(@job.date_applied)%></strong></p>
 		<% if @job.cover_letter_sent %>

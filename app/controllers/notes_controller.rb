@@ -19,7 +19,7 @@ class NotesController < ApplicationController
 		p params
 		p '#' * 20
 		@note = Note.new()
-		@job = Job.find(@note.job_id)
+		@job = Job.find(params[:job_id])
 
 	end
 
