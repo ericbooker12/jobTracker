@@ -25,6 +25,7 @@
     <%= f.label :title %>
     <% if @positions_arr %>
       <%= f.select :title, @positions_arr %>
+      <%=  link_to "Create New Position", new_position_path, class: "btn btn-default note-btn" %>
     <% else %>
       <%= f.text_field :title %>
     <% end %>

@@ -35279,3 +35279,726 @@ Processing by PositionsController#index as HTML
 Completed 200 OK in 230ms (Views: 228.2ms | ActiveRecord: 0.3ms)
 
 
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+Started GET "/jobs/new" for ::1 at 2017-03-13 19:05:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.5ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (1.1ms)
+  Rendered jobs/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 5.8ms)
+
+
+  
+SyntaxError (/Users/ericbooker/Code/jobTracker/app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...New Position" new_position_path class: "btn btn-default note...
+...                               ^):
+  
+app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/jobs/new.html.erb:3:in `_app_views_jobs_new_html_erb___2576093378822208887_70334229545220'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.0ms)
+Started GET "/jobs/new" for ::1 at 2017-03-13 19:05:54 -0700
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.6ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (0.9ms)
+  Rendered jobs/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/ericbooker/Code/jobTracker/app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...New Position" new_position_path class: "btn btn-default note...
+...                               ^):
+  
+app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/jobs/new.html.erb:3:in `_app_views_jobs_new_html_erb___2576093378822208887_70334189718300'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.4ms)
+Started GET "/jobs/new" for ::1 at 2017-03-13 19:06:03 -0700
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (1.0ms)
+  Rendered jobs/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/ericbooker/Code/jobTracker/app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...New Position" new_position_path, class: "btn btn-default not...
+...                               ^):
+  
+app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/jobs/new.html.erb:3:in `_app_views_jobs_new_html_erb___2576093378822208887_70334187160540'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.9ms)
+Started GET "/jobs/new" for ::1 at 2017-03-13 19:06:21 -0700
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (1.3ms)
+  Rendered jobs/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/ericbooker/Code/jobTracker/app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...New Position" new_position_path, class: "btn btn-default not...
+...                               ^):
+  
+app/views/jobs/_form.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/jobs/new.html.erb:3:in `_app_views_jobs_new_html_erb___2576093378822208887_70334263398700'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.9ms)
+Started GET "/jobs/new" for ::1 at 2017-03-13 19:06:29 -0700
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (410.0ms)
+  Rendered jobs/new.html.erb within layouts/application (411.8ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 1176ms (Views: 1173.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/positions/new" for ::1 at 2017-03-13 19:06:32 -0700
+Processing by PositionsController#new as HTML
+  Rendering positions/new.html.erb within layouts/application
+  Rendered positions/_form.html.erb (2.2ms)
+  Rendered positions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 214ms (Views: 211.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/positions" for ::1 at 2017-03-13 19:07:06 -0700
+Processing by PositionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TjVChrARLVFCTqRc9UiAqZ1ktGIv9vxogpd8EukGVrIvxLi2QUA6J+ZMvycDEKOYIolERDKhJYTNs3DEBTk2yQ==", "position"=>{"position_name"=>"Junior Developer"}, "commit"=>"Create Position"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "positions" ("position_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["position_name", "Junior Developer"], ["created_at", 2017-03-14 02:07:06 UTC], ["updated_at", 2017-03-14 02:07:06 UTC]]
+  [1m[35m (61.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions/9
+Completed 302 Found in 65ms (ActiveRecord: 61.8ms)
+
+
+Started GET "/positions/9" for ::1 at 2017-03-13 19:07:06 -0700
+Processing by PositionsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering positions/show.html.erb within layouts/application
+  Rendered positions/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 235ms (Views: 229.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 19:07:08 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 245ms (Views: 241.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/positions/new" for ::1 at 2017-03-13 19:07:11 -0700
+Processing by PositionsController#new as HTML
+  Rendering positions/new.html.erb within layouts/application
+  Rendered positions/_form.html.erb (1.7ms)
+  Rendered positions/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 238ms (Views: 236.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jobs/new" for ::1 at 2017-03-13 19:07:16 -0700
+Processing by JobsController#new as HTML
+  [1m[36mPosition Load (0.4ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendering jobs/new.html.erb within layouts/application
+  Rendered jobs/_form.html.erb (4.1ms)
+  Rendered jobs/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 236ms (Views: 233.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/jobs" for ::1 at 2017-03-13 19:07:38 -0700
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r9+dq0SPsu4jCwh2MHMUS1U1Npc4rgwim5N6L7uxSa28t6ksUHKd+30qslGvWK4fv0JDzqLRsvJyWplkaz5iKQ==", "job"=>{"company"=>"SAP", "URL"=>"", "title"=>"Junior developer", "date_applied"=>"2017-02-03", "resume_sent"=>"1", "cover_letter_sent"=>"1", "cover_letter"=>"", "not_offered"=>"2017-03-10"}, "commit"=>"Create Job"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "jobs" ("title", "company", "date_applied", "resume_sent", "cover_letter_sent", "created_at", "updated_at", "cover_letter", "URL", "not_offered") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Junior developer"], ["company", "SAP"], ["date_applied", Fri, 03 Feb 2017], ["resume_sent", true], ["cover_letter_sent", true], ["created_at", 2017-03-14 02:07:38 UTC], ["updated_at", 2017-03-14 02:07:38 UTC], ["cover_letter", ""], ["URL", ""], ["not_offered", 2017-03-10 08:00:00 UTC]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/jobs/14
+Completed 302 Found in 11ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/jobs/14" for ::1 at 2017-03-13 19:07:38 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 14]]
+  Rendered jobs/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 238.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/jobs" for ::1 at 2017-03-13 19:07:42 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 238ms (Views: 234.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/jobs/14" for ::1 at 2017-03-13 19:07:46 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 14]]
+  Rendered jobs/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 233ms (Views: 227.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/jobs/14/rejected" for ::1 at 2017-03-13 19:07:47 -0700
+Processing by JobsController#rejected as HTML
+  Parameters: {"authenticity_token"=>"3sUrK0SBD0lxbofZ0ppx8Td/d1Q+6urSX8fj6m4dlZrCrguu2vyeeGVjLEAAii6vRzIv+l/j7zpfBq1BZitP/g==", "id"=>"14"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "jobs" SET "rejected" = $1, "updated_at" = $2 WHERE "jobs"."id" = $3[0m  [["rejected", true], ["updated_at", 2017-03-14 02:07:47 UTC], ["id", 14]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-13 19:07:47 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 244ms (Views: 241.7ms | ActiveRecord: 0.6ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+Started GET "/" for ::1 at 2017-03-13 20:38:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (23.6ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 820ms (Views: 795.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:17 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.4ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (7.1ms)
+Started GET "/positions" for ::1 at 2017-03-13 20:39:17 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (1.1ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 393ms (Views: 387.2ms | ActiveRecord: 2.2ms)
+
+
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 327ms (Views: 323.1ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/positions/9" for ::1 at 2017-03-13 20:39:30 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VPYTioLTMjqAjFe19r2r+uTSxJoy6bNFArMONEPXXjVInTMPHK6jC5SB/CwkrfSklJ+cNFPgtq0CckCfS+GEUQ==", "id"=>"9"}
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 9]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 9]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 27ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:30 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 248ms (Views: 245.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/1" for ::1 at 2017-03-13 20:39:32 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gJtXM6eZ2nHdAvo5l2TifA9axXHy9EKJQyq2u98ah/uc8He2OeRLQMkPUaBFdL0ifxed35P9R2FD6/gQ1yxdnw==", "id"=>"1"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 1]]
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 1]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 24ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:32 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 221ms (Views: 219.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/3" for ::1 at 2017-03-13 20:39:34 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lGReJHxXeTWu/XFrbt84gp5MW1tYgchUPqa1ZEVWBjaID36h4iroBLrw2vK8z2fc7gED9TmIzbw+Z/vPTWDcUg==", "id"=>"3"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 3]]
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 3]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 3]]
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 6]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 6]]
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 7]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 7]]
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 10]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 10]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:34 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 239ms (Views: 237.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/4" for ::1 at 2017-03-13 20:39:36 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AEit6flgM/TDPZSYmll91+EBPkw0FbDVONd/PfZqjfEcI41sZx2ixdcwPwFISSKJkUxm4lUctT04FjGW/lxXlQ==", "id"=>"4"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 4]]
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 4]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 4]]
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 8]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 8]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 4]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 11ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:36 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 243ms (Views: 240.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/2" for ::1 at 2017-03-13 20:39:39 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1q9ki06lEBcHQjoQWBCKG+pmvumwIJ7wVzCwgv0TjwLKxEQO0NiBJhNPkYmKANVFmivmR9EpmxhX8f4p9SVVZg==", "id"=>"2"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 2]]
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 2]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 2]]
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 5]]
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 9]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 9]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 12ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:39 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 238ms (Views: 236.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/5" for ::1 at 2017-03-13 20:39:41 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sJJREUQe3C0tvNMs7ZkLP+LKWfzVzVdhO+Ml6JyZSGus+XGU2mNNHDmxeLU/iVRhkocBUrTEUok7ImtDlK+SDw==", "id"=>"5"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:41 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 235ms (Views: 233.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/positions/6" for ::1 at 2017-03-13 20:39:43 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IlIHPw3ViCGcCCbpFjxndW2muiuxjSDrqVgoDk05wPI+OSe6k6gZEIgFjXDELDgrHevihdCEJQOpmWalRQ8alg==", "id"=>"6"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 6]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 6]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:43 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 237ms (Views: 235.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/7" for ::1 at 2017-03-13 20:39:44 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rXPThoWVlDfBUgNbYALuDi+UQvOfY9Q4Cj0taXNZe4ixGPMDG+gFBtVfqMKyErFQX9kaXf5q0dAK/GPCe2+h7A==", "id"=>"7"}
+  [1m[36mPosition Load (0.3ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 7]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 7]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:44 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 246ms (Views: 244.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/positions/8" for ::1 at 2017-03-13 20:39:46 -0700
+Processing by PositionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KSTPYSuB3iJbmSeH0O2Nl2Iqf1iT88+sGGXbaMDu7Hw1T+/ktfxPE0+UjB4C/dLJEmcn9vL6ykQYpJXDyNg2GA==", "id"=>"8"}
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT  "positions".* FROM "positions" WHERE "positions"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."position_id" = $1[0m  [["position_id", 8]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "positions" WHERE "positions"."id" = $1[0m  [["id", 8]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/positions
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:39:46 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 232ms (Views: 230.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-13 20:39:51 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.2ms)
+Started GET "/" for ::1 at 2017-03-13 20:39:51 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (1.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 316ms (Views: 314.7ms | ActiveRecord: 0.3ms)
+
+
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 295ms (Views: 286.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/jobs/11" for ::1 at 2017-03-13 20:40:00 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 11]]
+  Rendered jobs/show.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 256ms (Views: 248.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/positions" for ::1 at 2017-03-13 20:40:11 -0700
+Processing by PositionsController#index as HTML
+  Rendering positions/index.html.erb within layouts/application
+  [1m[36mPosition Load (0.2ms)[0m  [1m[34mSELECT "positions".* FROM "positions"[0m
+  Rendered positions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 227ms (Views: 225.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-13 20:40:19 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.2ms)
+Started GET "/" for ::1 at 2017-03-13 20:40:19 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (3.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 385ms (Views: 383.5ms | ActiveRecord: 0.3ms)
+
+
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 324ms (Views: 318.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/jobs/11" for ::1 at 2017-03-13 20:40:30 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 11]]
+  Rendered jobs/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 252ms (Views: 246.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/jobs/11" for ::1 at 2017-03-13 20:40:34 -0700
+Processing by JobsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O4YAwiee8ROq9ekihw8NwOdZpvkMAlbsJY5A3weu2HAn7SBHueNgIr74QrtVH1KelxT+V20LUwQlTw50D5gCFA==", "id"=>"11"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 11]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = $1[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 11]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/jobs
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/jobs" for ::1 at 2017-03-13 20:40:34 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 234ms (Views: 232.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs/11" for ::1 at 2017-03-13 20:40:35 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=11):
+  
+app/controllers/jobs_controller.rb:81:in `set_job'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+Started GET "/" for ::1 at 2017-03-13 20:40:41 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 237ms (Views: 235.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs/13" for ::1 at 2017-03-13 20:40:43 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 13]]
+  Rendered jobs/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 259ms (Views: 255.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/jobs/13" for ::1 at 2017-03-13 20:40:46 -0700
+Processing by JobsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4g4q6Tt8jgG54XukUwKtdLvtyFlX6tt7ePzwUl3/wm7+ZQpspQEfMK3s0D2BEvIqy6CQ9zbj3pN4Pb75VckYCg==", "id"=>"13"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 13]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 13]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/jobs
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/jobs" for ::1 at 2017-03-13 20:40:46 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 286ms (Views: 284.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs/13" for ::1 at 2017-03-13 20:40:47 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Job with 'id'=13):
+  
+app/controllers/jobs_controller.rb:81:in `set_job'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.8ms)
+Started GET "/" for ::1 at 2017-03-13 20:40:51 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header2.html.erb (0.6ms)
+Completed 200 OK in 284ms (Views: 282.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/jobs/14" for ::1 at 2017-03-13 20:40:53 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 14]]
+  Rendered jobs/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 253ms (Views: 249.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/jobs/14" for ::1 at 2017-03-13 20:40:56 -0700
+Processing by JobsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CkP+6oVnqs2c81N4OsdQIKcvoXZOZYQ5hNv0L/LK32IWKN5vGxo7/Ij++OHo1w9+12L52C9sgdGEGrqE+vwFBg==", "id"=>"14"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 14]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "jobs" WHERE "jobs"."id" = $1[0m  [["id", 14]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/jobs
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/jobs" for ::1 at 2017-03-13 20:40:56 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 238ms (Views: 236.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs" for ::1 at 2017-03-13 20:40:59 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 248ms (Views: 246.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-13 20:41:02 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (1.9ms)
+Started GET "/" for ::1 at 2017-03-13 20:41:02 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (2.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 292ms (Views: 290.6ms | ActiveRecord: 0.3ms)
+
+
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 290ms (Views: 285.7ms | ActiveRecord: 2.1ms)
+
+
