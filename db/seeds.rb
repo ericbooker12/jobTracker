@@ -26,5 +26,4 @@ Position.create(position_name: "Policewoman")
 Position.create(position_name: "Garbagewoman")
 Position.create(position_name: "Mailwoman")
 
-position = positions[index.rand(0..positions.length - 1)]
-Job.create(title: position.position_name, company: Faker::Company.name, date_applied: Faker::Date.between(30.days.ago, Date.today), resume_sent: true, cover_letter_sent: true, position_id: position.id)
+# Job.create(title: position.position_name, company: Faker::Company.name, date_applied: Faker::Date.between(30.days.ago, Date.today), resume_sent: true, cover_letter_sent: true, position_id: position.id)
