@@ -1,8 +1,7 @@
 class JobsController < ApplicationController
-  before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected]
+  before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected, :unreject]
   def index
     @jobs = Job.order(:date_applied)
-
   end
 
   # GET /jobs/1
@@ -69,6 +68,11 @@ class JobsController < ApplicationController
   def rejected
   	@job.update_attribute(:rejected, true)
   	redirect_to root_path, notice: "The position of #{@job.title} from #{@job.company} is marked as 'Not Offered'"
+  end
+
+  def unreject
+  	@job.update_attribute(:rejected, false)
+  	redirect_to root_path, notice: "The position of #{@job.title} from #{@job.company} is back on the table"
   end
 
   private

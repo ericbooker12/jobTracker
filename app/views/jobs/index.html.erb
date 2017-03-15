@@ -17,7 +17,7 @@
 	<tbody>
 	<% @jobs.each do |job| %>
 		<%  if job.rejected? %>
-			<tr class="job-list_item"><strike>
+			<tr class="job-list_item strikeout"><strike>
 				<td style="opacity: 0.4;"><strike><%= link_to capitalize_all(job.title), job %></strike></td>
 				<td style="opacity: 0.4;">
 					<% if job.URL %>
@@ -26,6 +26,8 @@
 						<strike><%=  job.company %>
 					<% end %>
 				</strike></td>
+				<td style="opacity: 0.4;"><strike><%= job.date_applied %></strike></td>
+
 				<td style="opacity: 0.4;"" colspan='3'><strong><h4>Job is off the table</h4></strong></td>
 			</tr>
 

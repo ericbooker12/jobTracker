@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 	resources :jobs do
 		member do
 			patch :rejected
+			patch :unreject
 		end
 	end
 
