@@ -35020,3 +35020,9 @@ Processing by JobsController#index as HTML
 Completed 200 OK in 663ms (Views: 644.2ms | ActiveRecord: 3.5ms)
 
 
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
