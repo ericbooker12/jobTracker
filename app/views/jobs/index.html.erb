@@ -18,7 +18,7 @@
 	<% @jobs.each do |job| %>
 		<%  if job.rejected? %>
 			<tr class="job-list_item"><strike>
-				<td style="opacity: 0.4;"><strike><%= link_to job.title.capitalize, job %></strike></td>
+				<td style="opacity: 0.4;"><strike><%= link_to capitalize_all(job.title), job %></strike></td>
 				<td style="opacity: 0.4;">
 					<% if job.URL %>
 						<strike><%= link_to job.company, job.URL %>
@@ -29,10 +29,10 @@
 				<td style="opacity: 0.4;"" colspan='3'><strong><h4>Job is off the table</h4></strong></td>
 			</tr>
 
-
 		<% else %>
+
 			<tr class="job-list_item">
-				<td><%= link_to job.title.capitalize, job %></td>
+				<td><%= link_to  capitalize_all(job.title), job %></td>
 				<td>
 					<% if job.URL %>
 						<%= link_to job.company, job.URL %>
