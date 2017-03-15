@@ -36691,3 +36691,111 @@ them to actual class references.  For example:
   "PDFKit::Middleware" => PDFKit::Middleware
 
  (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+Started GET "/" for ::1 at 2017-03-15 15:32:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (1.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."date_applied" ASC[0m
+  Rendered jobs/index.html.erb within layouts/application (25.1ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 710ms (Views: 691.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/jobs/44" for ::1 at 2017-03-15 15:32:47 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 44]]
+  Rendered jobs/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 240ms (Views: 217.0ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/jobs/44/rejected" for ::1 at 2017-03-15 15:32:49 -0700
+Processing by JobsController#rejected as HTML
+  Parameters: {"authenticity_token"=>"8i9ohiUk1OEFlSaSg6cbA+liH0q57eKkOEMBEJ3kq9buREgDu1lF0BGYjQtRt0RdmS9H5Njk50w4gk+7ldJxsg==", "id"=>"44"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "jobs" SET "rejected" = $1, "updated_at" = $2 WHERE "jobs"."id" = $3[0m  [["rejected", true], ["updated_at", 2017-03-15 22:32:49 UTC], ["id", 44]]
+  [1m[35m (64.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 70ms (ActiveRecord: 65.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-15 15:32:49 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (1.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."date_applied" ASC[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 237ms (Views: 234.8ms | ActiveRecord: 1.0ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
+Started GET "/" for ::1 at 2017-03-15 15:33:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (1.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."date_applied" ASC[0m
+  Rendered jobs/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_header2.html.erb (0.4ms)
+Completed 200 OK in 683ms (Views: 661.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/jobs/21" for ::1 at 2017-03-15 15:33:31 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 21]]
+  Rendered jobs/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 209ms (Views: 187.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/jobs/20" for ::1 at 2017-03-15 15:33:35 -0700
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."job_id" = $1[0m  [["job_id", 20]]
+  Rendered jobs/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 219ms (Views: 213.5ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/jobs/20/rejected" for ::1 at 2017-03-15 15:33:36 -0700
+Processing by JobsController#rejected as HTML
+  Parameters: {"authenticity_token"=>"Lp41OsQ03cnUkGN1pmMurJUTBOVd1AWUcCQJ4lgg/GIy9RW/WklM+MCdyOx0c3Hy5V5cSzzdAHxw5UdJUBYmBg==", "id"=>"20"}
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "jobs" SET "rejected" = $1, "updated_at" = $2 WHERE "jobs"."id" = $3[0m  [["rejected", true], ["updated_at", 2017-03-15 22:33:36 UTC], ["id", 20]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-15 15:33:36 -0700
+Processing by JobsController#index as HTML
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (1.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" ORDER BY "jobs"."date_applied" ASC[0m
+  Rendered jobs/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header2.html.erb (0.3ms)
+Completed 200 OK in 237ms (Views: 234.7ms | ActiveRecord: 1.0ms)
+
+
