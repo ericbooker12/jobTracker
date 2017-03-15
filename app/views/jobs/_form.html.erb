@@ -23,11 +23,7 @@
 
   <div class="field">
     <%= f.label :title %>
-    <% if @positions_arr %>
-      <%= f.select :title, @positions_arr %>
-    <% else %>
-      <%= f.text_field :title %>
-    <% end %>
+    <%= f.text_field :title %>
   </div>
 
   <div class="field">

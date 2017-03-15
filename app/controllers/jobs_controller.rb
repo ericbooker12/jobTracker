@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected]
   def index
-    @jobs = Job.all
+    @jobs = Job.order(:date_applied)
 
   end
 
@@ -10,10 +10,6 @@ class JobsController < ApplicationController
   def show
   	@job = Job.find(params[:id])
   	@notes = @job.notes
-  	# p '#' * 20
-  	# p @job.notes
-  	# p params
-  	# p '#' * 20
   end
 
   # GET /jobs/new

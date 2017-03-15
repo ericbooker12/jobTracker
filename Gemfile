@@ -25,11 +25,14 @@ gem 'prawn'
 gem 'pdfkit'
 gem 'wkhtmltopdf-binary'
 
+
 group :development, :test do
   gem 'faker', '~> 1.7', '>= 1.7.3'
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'factory_girl_rails', '~> 4.8'
+  gem 'webrat', '~> 0.7.3'
+	gem 'cucumber', '~> 2.4'
 end
 
 group :development do

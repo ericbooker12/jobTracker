@@ -14,4 +14,10 @@ module ApplicationHelper
 		date.strftime("%A, %b %d, %Y")
 	end
 
+	def capitalize_all(string)
+			new_arr = []
+			string.split.each { |word| new_arr << word.capitalize }
+			new_arr.join(" ")
+	end
+
 end
