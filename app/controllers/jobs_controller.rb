@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected, :unreject]
   def index
-    @jobs = Job.order(:date_applied)
+    @jobs = Job.order(date_applied: :desc)
   end
 
   # GET /jobs/1
