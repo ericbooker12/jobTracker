@@ -5,6 +5,7 @@
 <table class="table xtable-stripedx job-table">
 	<thead>
 		<tr>
+			<th class="row-header"></th>
 			<th class="row-header">Job Title</th>
 			<th class="row-header">Company</th>
 			<th class="row-header">Date applied</th>
@@ -15,9 +16,10 @@
 	</thead>
 
 	<tbody>
-	<% @jobs.each do |job| %>
+	<% @jobs.each_with_index do |job, i| %>
 		<%  if job.rejected? %>
 			<tr class="job-list_item strikeout"><strike>
+				<td><%= i + 1 %></td>
 				<td style="opacity: 0.4;"><strike><%= link_to capitalize_all(job.title), job %></strike></td>
 				<td style="opacity: 0.4;">
 					<% if job.URL %>
@@ -34,6 +36,7 @@
 		<% else %>
 
 			<tr class="job-list_item">
+				<td><%= i + 1 %></td>
 				<td><%= link_to  capitalize_all(job.title), job %></td>
 				<td>
 					<% if job.URL %>
