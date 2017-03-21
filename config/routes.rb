@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
+  devise_for :users
 	resources :notes
 	resources :positions
+
 	resources :jobs do
 		member do
 			patch :rejected
@@ -8,8 +11,6 @@ Rails.application.routes.draw do
 		end
 	end
 
-
-	# get 'resume', to: 'jobs#resume'
-
 	root 'jobs#index'
+
 end

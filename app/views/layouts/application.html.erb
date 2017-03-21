@@ -16,11 +16,14 @@
 </head>
 <body>
 	<div class="container">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
 
-	<%= render 'layouts/header2' %>
-	<div class="main">
-		<%= yield %>
-	</div>
+
+		<%= render 'layouts/header2' %>
+		<div class="main">
+			<%= yield %>
+		</div>
 
 	</div>
 </body>

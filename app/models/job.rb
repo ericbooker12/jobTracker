@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-	belongs_to :position, required: false
+	belongs_to :user
 	has_many :notes
 
 	def self.rejected

@@ -25,6 +25,8 @@ class NotesController < ApplicationController
 
 	# GET /notes/1/edit
 	def edit
+		# @note = Note.find(params[:id])
+		# @job = Job.find(params[:job_id])
 	end
 
 	# POST /notes

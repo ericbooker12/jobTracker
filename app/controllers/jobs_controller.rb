@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy, :rejected, :unreject]
+  before_action :authenticate_user!, except: [:show, :index]
   def index
     @jobs = Job.order(date_applied: :desc)
   end
@@ -13,12 +14,7 @@ class JobsController < ApplicationController
 
   # GET /jobs/new
   def new
-    @job = Job.new
-    @positions = Position.all
-    @positions_arr = []
-    @positions.each do |position|
-    	@positions_arr << position.position_name.capitalize
-    end
+    @job = current_user.jobs.build
   end
 
   # GET /jobs/1/edit
@@ -28,7 +24,7 @@ class JobsController < ApplicationController
   # POST /jobs
   # POST /jobs.json
   def create
-    @job = Job.new(job_params)
+    @job = current_user.jobs.build(job_params)
     p job_params
     respond_to do |format|
       if @job.save
