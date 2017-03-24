@@ -41782,3 +41782,9 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 243ms (Views: 242.1ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "PDFKit::Middleware" => PDFKit::Middleware
+
+ (called from <top (required)> at /Users/ericbooker/Code/jobTracker/config/environment.rb:5)
