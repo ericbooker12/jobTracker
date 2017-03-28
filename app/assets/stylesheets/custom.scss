@@ -84,24 +84,6 @@ $josefin-slab: 'Josefin Slab', serif;
   padding-top: 10px;
 }
 
-// .shadowleft,
-// .shadowright {
-// 	width: 24px;
-// 	height: 448%;
-// 	position: absolute;
-// 	top: 15px;
-// }
-
-.shadowleft {
-	left: -24px;
-	background: url(side_shadow_l.png) transparent no-repeat 0px 0px;
-}
-
-.shadowright {
-	right: -24px;
-	background: url(side_shadow_r.png) transparent no-repeat 0px 0px;
-}
-
 .text-box {
 	border: 0px solid #999999;
 	box-shadow: $shadow2 grey;
